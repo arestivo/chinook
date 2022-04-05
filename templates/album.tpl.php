@@ -11,7 +11,7 @@
   <table id="tracks">
     <tr><th scope="col">#</th><th scope="col">Title</th><th scope="col">Duration</th></tr>
     <?php foreach ($tracks as $track) { ?>
-      <tr><td><?=$track->id?></td><td><?=$track->name?></td><td><?=$track->length?></td></tr>
+      <tr><td><?=$track->id?></td><td><?=$track->name?></td><td><?=$track->time()?></td></tr>
     <?php } ?>
   <table>
 <?php } ?>
