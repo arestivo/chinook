@@ -2,16 +2,19 @@
   declare(strict_types = 1);
 
   require_once('database/connection.db.php');
-  require_once('database/artist.db.php');
+
+  require_once('database/artist.class.php');
+  require_once('database/album.class.php');
 
   require_once('templates/common.tpl.php');
   require_once('templates/artist.tpl.php');
 
   $db = getDatabaseConnection();
 
-  $artist = getArtist($db, intval($_GET['id']));
+  $artist = Artist::getArtist($db, intval($_GET['id']));
+  $albums = Album::getArtistAlbums($db, intval($_GET['id']));
 
   drawHeader();
-  drawArtist($artist['name'], $artist['albums']);
+  drawArtist($artist, $albums);
   drawFooter();
 ?>
