@@ -18,7 +18,7 @@
     </header>
   
     <main>
-      <h2>Group Name</h2>
+      <h2>Artist Name</h2>
       <section id="albums">
         <article>
           <img src="https://picsum.photos/200?1">

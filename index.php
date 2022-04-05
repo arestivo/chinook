@@ -18,21 +18,21 @@
     </header>
   
     <main>
-      <h2>Groups</h2>
-      <section id="groups">
+      <h2>Artists</h2>
+      <section id="artists">
         <article>
           <img src="https://picsum.photos/200?1">
-          <a href="group.php?id=1">Group Name</a>
+          <a href="artist.php?id=1">Artist Name</a>
         </article>
 
         <article>
           <img src="https://picsum.photos/200?2">
-          <a href="group.php?id=1">Group Name</a>
+          <a href="artist.php?id=1">Artist Name</a>
         </article>
 
         <article>
           <img src="https://picsum.photos/200?3">
-          <a href="group.php?id=1">Group Name</a>
+          <a href="artist.php?id=1">Artist Name</a>
         </article>
       <section>
     </main>

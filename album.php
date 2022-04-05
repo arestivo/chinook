@@ -19,7 +19,7 @@
   
     <main>
       <h2>Album Name</h2>
-      <h3><a href="group.php?id=1">Group Name</a></h2>      
+      <h3><a href="artist.php?id=1">Artist Name</a></h2>      
       <table id="tracks">
         <tr><th scope="col">#</th><th scope="col">Name</th><th scope="col">Duration</th></tr>
         <tr><td>1</td><td>Track Name</td><td>3:43</td></tr>

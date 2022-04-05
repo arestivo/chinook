@@ -23,5 +23,5 @@ Draw some initial mockups. Don't lose too much time with these:
 # Step 3: HTML in PHP files:
 
 * [index.php](index.php)
-* [group.php](group.php)
+* [artist.php](artist.php)
 * [album.php](album.php)
