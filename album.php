@@ -26,7 +26,7 @@
         <tr><td>2</td><td>Track Name</td><td>5:02</td></tr>
         <tr><td>3</td><td>Track Name</td><td>4:12</td></tr>
         <tr><td>4</td><td>Track Name</td><td>3:27</td></tr>
-      <table>
+      </table>
     </main>
 
     <footer>
