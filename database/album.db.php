@@ -15,13 +15,21 @@
     );
   }
 
-  function getAlbumTracks() {
-    return array(
-      array('id' => 1, 'title' => 'Track Name 1', 'length' => '3:22'),
-      array('id' => 2, 'title' => 'Track Name 2', 'length' => '5:07'),
-      array('id' => 3, 'title' => 'Track Name 3', 'length' => '4:41'),
-      array('id' => 4, 'title' => 'Track Name 4', 'length' => '3:01')
-    );  
+  function getAlbumTracks(PDO $db, int $id) {
+    $stmt = $db->prepare('SELECT TrackId, Name, Milliseconds FROM Track WHERE AlbumId = ?');
+    $stmt->execute(array($id));
+
+    $tracks = [];
+
+    while ($track = $stmt->fetch()) {
+      $tracks[] = array(
+        'id' => $track['TrackId'],
+        'name' => $track['Name'],
+        'length' => intval(round($track['Milliseconds'] / 1000))
+      );
+    }
+
+    return $tracks;
   }
 
 ?>

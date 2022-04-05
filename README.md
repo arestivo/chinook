@@ -51,6 +51,6 @@ Create a [database](database) folder that will contain all database pertinent fi
 * [database.sql](database/database.sql) the SQL file used to create the database.
 * [database.db](database/database.db) the actual SQLite database file.
 * [connection.php](database/connection.db.php) function to connect to the database.
-* [artist.php](database/artist.db.php) queries related to artists.
-* [album.php](database/album.db.php) queries related to albums.
+* [artist.db.php](database/artist.db.php) queries related to artists.
+* [album.db.php](database/album.db.php) queries related to albums.
 

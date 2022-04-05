@@ -6,7 +6,7 @@
   <table id="tracks">
     <tr><th scope="col">#</th><th scope="col">Title</th><th scope="col">Duration</th></tr>
     <?php foreach ($tracks as $track) { ?>
-      <tr><td><?=$track['id']?></td><td><?=$track['title']?></td><td><?=$track['length']?></td></tr>
+      <tr><td><?=$track['id']?></td><td><?=$track['name']?></td><td><?=round($track['length']/60)?>:<?=$track['length']%60 < 10 ? '0' : ''?><?=$track['length']%60?></td></tr>
     <?php } ?>
   <table>
 <?php } ?>
