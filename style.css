@@ -1,0 +1,119 @@
+body {
+  width: 60em;
+  margin: 1em auto;
+
+  --background-color: #ffe8d6;
+  --main-color: #0a9396;
+}
+
+body > header {
+  display: flex;
+
+  padding: 1em;
+
+  background-color: var(--background-color);
+}
+
+body > header h1 {
+  flex-grow: 1;
+}
+
+body > header h1 a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+
+body > header form {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1em;
+}
+
+body > header form input {
+  grid-column-end: span 2;
+}
+
+main {
+  background-color: var(--background-color);
+
+  margin: 1em 0;
+  padding: 1em;
+}
+
+main a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+#groups {
+  display: flex;
+  gap: 1em;
+}
+
+#groups article {
+  display: grid;
+}
+
+#groups article * {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+#groups article a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px #333;
+
+  font-size: 1.5em;
+
+  align-self: center;
+  justify-self: center;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#albums {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#albums article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+#albums article img {
+  grid-row-end: span 2;
+}
+
+#albums article a {
+  font-size: 2em;
+  align-self: flex-end;
+}
+
+#albums article p.info {
+  align-self: flex-start;
+}
+
+#tracks {
+  width: 100%;
+}
+
+#tracks td, #tracks th {
+  padding: 1em;
+  text-align: left;
+}
+
+#tracks td:last-child, #tracks th:last-child {
+  text-align: right;
+}
+
+footer {
+  background-color: black;
+  padding: 1em;
+  color: white;
+}
