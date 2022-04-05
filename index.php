@@ -9,7 +9,7 @@
 
     <header>
       <h1><a href="/">Music Shop</a></h1>
-      <form action="action_login.php" method="post">
+      <form action="action_login.php" method="post" class="login">
         <input type="text" name="username" placeholder="username">
         <input type="password" name="password" placeholder="password">
         <a href="register.php">Register</a>
@@ -34,7 +34,7 @@
           <img src="https://picsum.photos/200?3">
           <a href="artist.php?id=1">Artist Name</a>
         </article>
-      <section>
+      </section>
     </main>
 
     <footer>
