@@ -11,7 +11,7 @@
   $customer = Customer::getCustomerWithPassword($db, $_POST['email'], $_POST['password']);
 
   if ($customer) {
-    $_SESSION['email'] = $customer->email;
+    $_SESSION['id'] = $customer->id;
     $_SESSION['name'] = $customer->name();
   }
 
