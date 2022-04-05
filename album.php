@@ -12,6 +12,6 @@
   );
 
   drawHeader();
-  drawAlbum(1, 'Album Name', 1, 'Group Name', $tracks);
+  drawAlbum(1, 'Album Name', 1, 'Artist Name', $tracks);
   drawFooter();
 ?>

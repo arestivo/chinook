@@ -1,19 +1,19 @@
 <?php declare(strict_types = 1); ?>
 
-<?php function drawGroups(array $groups) { ?>
-  <h2>Groups</h2>
-  <section id="groups">
-    <?php foreach($groups as $group) { ?> 
+<?php function drawArtists(array $artists) { ?>
+  <h2>Artists</h2>
+  <section id="artists">
+    <?php foreach($artists as $artist) { ?> 
       <article>
-        <img src="https://picsum.photos/200?<?=$group['id']?>">
-        <a href="group.php?id=1"><?=$group['name']?></a>
+        <img src="https://picsum.photos/200?<?=$artist['id']?>">
+        <a href="artist.php?id=1"><?=$artist['name']?></a>
       </article>
     <?php } ?>
   <section>
 <?php } ?>
 
-<?php function drawGroup(string $groupName, array $albums) { ?>
-  <h2><?=$groupName?></h2>
+<?php function drawArtist(string $artistName, array $albums) { ?>
+  <h2><?=$artistName?></h2>
   <section id="albums">
     <?php foreach ($albums as $album) { ?>
     <article>

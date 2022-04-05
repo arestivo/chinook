@@ -23,7 +23,7 @@ Draw some initial mockups. Don't lose too much time with these:
 # Step 3: HTML in PHP files:
 
 * [index.php](index.php)
-* [group.php](group.php)
+* [artist.php](artist.php)
 * [album.php](album.php)
 
 # Step 4: Create template files:
@@ -33,5 +33,5 @@ Create a [templates](templates) folder that will contain several template files.
 Each template file will have functions that will be able to draw parts of the HTML:
 
 * [common.tpl.php](templates/common.tpl.php) drawHeader, drawFooter, drawLoginForm.
-* [group.tpl.php](templates/group.tpl.php) drawGroups, drawGroup.
+* [artist.tpl.php](templates/artist.tpl.php) drawArtists, drawArtist.
 * [album.tpl.php](templates/album.tpl.php) drawAlbum.

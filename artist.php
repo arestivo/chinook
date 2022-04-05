@@ -2,7 +2,7 @@
   declare(strict_types = 1);
 
   require_once('templates/common.tpl.php');
-  require_once('templates/group.tpl.php');
+  require_once('templates/artist.tpl.php');
 
   $albums = array(
     array('id' => 1, 'name' => 'Album Name 1', 'tracks' => 8, 'length' => 74),
@@ -12,6 +12,6 @@
   );
 
   drawHeader();
-  drawGroup('Group Name', $albums);
+  drawArtist('Artist Name', $albums);
   drawFooter();
 ?>
