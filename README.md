@@ -20,13 +20,13 @@ Draw some initial mockups. Don't lose too much time with these:
 
 ![](mockups.svg)
 
-# Step 3: HTML in PHP files:
+# Step 3: HTML in PHP files
 
 * [index.php](index.php)
 * [artist.php](artist.php)
 * [album.php](album.php)
 
-# Step 4: Create template files:
+# Step 4: Create template files
 
 Create a [templates](templates) folder that will contain several template files.
 

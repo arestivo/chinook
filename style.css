@@ -23,14 +23,16 @@ body > header h1 a {
   text-decoration: none;
 }
 
-
 body > header form {
   display: grid;
+}
+
+body > header form.login {
   grid-template-columns: auto auto;
   gap: 1em;
 }
 
-body > header form input {
+body > header form.login input {
   grid-column-end: span 2;
 }
 
@@ -48,11 +50,15 @@ main a {
 
 #artists {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1em;
 }
 
 #artists article {
   display: grid;
+  justify-content: center;
+  width: 200px;
 }
 
 #artists article * {
@@ -70,8 +76,7 @@ main a {
   align-self: center;
   justify-self: center;
 
-  overflow: hidden;
-  text-overflow: ellipsis;
+  text-align: center;
 }
 
 #albums {
