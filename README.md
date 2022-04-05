@@ -20,13 +20,13 @@ Draw some initial mockups. Don't lose too much time with these:
 
 ![](docs/mockups.svg)
 
-# Step 3: HTML in PHP files:
+# Step 3: HTML in PHP files
 
 * [index.php](index.php)
 * [artist.php](artist.php)
 * [album.php](album.php)
 
-# Step 4: Create template files:
+# Step 4: Create template files
 
 Create a [templates](templates) folder that will contain several template files.
 
@@ -36,15 +36,15 @@ Each template file will have functions that will be able to draw parts of the HT
 * [artist.tpl.php](templates/artist.tpl.php) drawArtists, drawArtist.
 * [album.tpl.php](templates/album.tpl.php) drawAlbum.
 
-# Step 5: Style folder:
+# Step 5: Style folder
 
 Create a [css](css) folder that will contain all files related to style of the web page.
 
-# Step 6: Documents folder:
+# Step 6: Documents folder
 
 Create a [docs](docs) folder that will contain all files related to the documentation.
 
-# Step 7: Connect to the database:
+# Step 7: Connect to the database
 
 Create a [database](database) folder that will contain all database pertinent files:
 
@@ -54,7 +54,7 @@ Create a [database](database) folder that will contain all database pertinent fi
 * [artist.db.php](database/artist.db.php) queries related to artists.
 * [album.db.php](database/album.db.php) queries related to albums.
 
-# Step 8: Use classes:
+# Step 8: Use classes
 
 Transform all data access functions into classes:
 
@@ -62,4 +62,4 @@ Transform all data access functions into classes:
 * [album.class.php](database/album.class.php) represents a album from an artis.
 * [track.class.php](database/track.class.php) represent a track in a album.
 
-Each class has one or more functions that enable it from getting data from the database.
+Each class has one or more functions to get data from the database.
