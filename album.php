@@ -4,7 +4,7 @@
   require_once('database/connection.db.php');
   require_once('database/artist.class.php');
   require_once('database/album.class.php');
-  require_once('database/tracks.class.php');
+  require_once('database/track.class.php');
 
   require_once('templates/common.tpl.php');
   require_once('templates/album.tpl.php');
