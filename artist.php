@@ -9,9 +9,9 @@
 
   $db = getDatabaseConnection();
 
-  $artists = getArtists($db, 8);
+  $artist = getArtist($db, intval($_GET['id']));
 
   drawHeader();
-  drawArtists($artists);
+  drawArtist($artist['name'], $artist['albums']);
   drawFooter();
 ?>

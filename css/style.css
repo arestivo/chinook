@@ -46,21 +46,26 @@ main a {
   text-decoration: none;
 }
 
-#groups {
+#artists {
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
 }
 
-#groups article {
+#artists article {
   display: grid;
+  flex-grow: 1;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 200px;
 }
 
-#groups article * {
+#artists article * {
   grid-column-start: 1;
   grid-row-start: 1;
 }
 
-#groups article a {
+#artists article a {
   color: white;
   text-decoration: none;
   text-shadow: 2px 2px #333;
@@ -70,8 +75,7 @@ main a {
   align-self: center;
   justify-self: center;
 
-  overflow: hidden;
-  text-overflow: ellipsis;
+  text-align: center;
 }
 
 #albums {
