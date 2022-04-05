@@ -8,5 +8,5 @@
     <?php foreach ($tracks as $track) { ?>
       <tr><td><?=$track['id']?></td><td><?=$track['name']?></td><td><?=round($track['length']/60)?>:<?=$track['length']%60 < 10 ? '0' : ''?><?=$track['length']%60?></td></tr>
     <?php } ?>
-  <table>
+    </table>
 <?php } ?>
