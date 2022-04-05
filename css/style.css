@@ -2,8 +2,14 @@ body {
   width: 60em;
   margin: 1em auto;
 
+  max-width: 100vw;
+
   --background-color: #ffe8d6;
   --main-color: #0a9396;
+}
+
+body > * {
+  margin: 0 1em;
 }
 
 body > header {
@@ -39,7 +45,7 @@ body > header form.login input {
 main {
   background-color: var(--background-color);
 
-  margin: 1em 0;
+  margin: 1em;
   padding: 1em;
 }
 
@@ -132,4 +138,10 @@ footer {
   background-color: black;
   padding: 1em;
   color: white;
+}
+
+@media only screen and (max-width: 540px) {
+  #albums article {
+    grid-template-columns: auto;
+  }
 }

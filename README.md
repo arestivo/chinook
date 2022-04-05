@@ -84,3 +84,9 @@ Each class has one or more functions to get data from the database.
 * Make sure nothing happens if no user is logged in.
 * Add a function to save customer data.
 * Create a template to edit a profile.
+
+# Step 11: Responsive
+
+* Add responsive viewport to HTML head.
+* Set maximum width of body.
+* Add a media query for smaller screens.
