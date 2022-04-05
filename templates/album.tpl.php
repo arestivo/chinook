@@ -13,5 +13,5 @@
     <?php foreach ($tracks as $id => $track) { ?>
       <tr><td><?=$id + 1?></td><td><?=$track->name?></td><td><?=$track->time()?></td></tr>
     <?php } ?>
-  <table>
+    </table>
 <?php } ?>
