@@ -63,3 +63,14 @@ Transform all data access functions into classes:
 * [track.class.php](database/track.class.php) represent a track in a album.
 
 Each class has one or more functions to get data from the database.
+
+# Step 9: Log In / Log out Actions
+
+* Start a session on every page using *session_start()*.
+* Create a class to get customer data: [database/customer.class.php](database/customer.class.php).
+* Create the [action_login.php](action_login.php) page that:
+  * Receives a username and password, verifies if they exist in the database.
+  * If they do, saves the customer data to the session.
+  * Redirects the user back to the previous page.
+* Show a logout form if the user is logged in.
+* Create the [action_login.php](action_login.php) page that destroys the session.

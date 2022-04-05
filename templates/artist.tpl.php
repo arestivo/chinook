@@ -13,7 +13,7 @@
         <a href="artist.php?id=<?=$artist->id?>"><?=$artist->name?></a>
       </article>
     <?php } ?>
-  <section>
+  </section>
 <?php } ?>
 
 <?php function drawArtist(Artist $artist, array $albums) { ?>
@@ -26,5 +26,5 @@
       <p class="info"><?=$album->tracks?> tracks / <?=$album->length?> min</p>
     </article>
     <?php } ?>
-  <section>
+  </section>
 <?php } ?>
