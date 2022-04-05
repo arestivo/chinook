@@ -74,3 +74,13 @@ Each class has one or more functions to get data from the database.
   * Redirects the user back to the previous page.
 * Show a logout form if the user is logged in.
 * Create the [action_login.php](action_login.php) page that destroys the session.
+
+# Step 10: Edit Profile
+
+* Add a new [profile.php](profile.php) page that shows a form to edit the profile of the current user.
+* Make sure it does not show if no user is logged in.
+* Add a link from the logout form to the new page.
+* Add a new [action_edit_profile.php](action_edit_profile.php) action page that receives the first and last name and saves them to the profile of the current user.
+* Make sure nothing happens if no user is logged in.
+* Add a function to save customer data.
+* Create a template to edit a profile.

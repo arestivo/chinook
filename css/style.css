@@ -18,7 +18,7 @@ body > header h1 {
   flex-grow: 1;
 }
 
-body > header h1 a {
+body > header a {
   color: var(--main-color);
   text-decoration: none;
 }
@@ -115,6 +115,17 @@ main a {
 
 #tracks td:last-child, #tracks th:last-child {
   text-align: right;
+}
+
+form.profile {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+  max-width: 20em;
+}
+
+form.profile button {
+  grid-column-start: 2;
 }
 
 footer {

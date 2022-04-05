@@ -1,8 +1,4 @@
-<?php 
-  declare(strict_types = 1); 
-
-  require_once('database/customer.class.php');
-?>
+<?php declare(strict_types = 1); ?>
 
 <?php function drawHeader() { ?>
 <!DOCTYPE html>
@@ -17,7 +13,7 @@
     <header>
       <h1><a href="/">Music Shop</a></h1>
       <?php 
-        if ($_SESSION['email']) drawLogoutForm($_SESSION['name']);
+        if ($_SESSION['id']) drawLogoutForm($_SESSION['name']);
         else drawLoginForm();
       ?>
     </header>
@@ -46,7 +42,7 @@
 
 <?php function drawLogoutForm(string $name) { ?>
   <form action="action_logout.php" method="post" class="logout">
-    <?=$name?>
+    <a href="profile.php"><?=$name?></a>
     <button type="submit">Logout</button>
   </form>
 <?php } ?>
