@@ -54,6 +54,8 @@
           $customer['Email']
         );
       }
+
+      return null;
     }
 
   }
