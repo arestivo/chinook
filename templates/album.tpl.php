@@ -7,7 +7,7 @@
 
 <?php function drawAlbum(Album $album, Artist $artist, array $tracks) { ?>
   <h2><?=$album->title?></h2>
-  <h3><a href="artist.php?id=<?=$artist->id?>"><?=$artist->name?></a></h2>      
+  <h3><a href="artist.php?id=<?=$artist->id?>"><?=$artist->name?></a></h3>      
   <table id="tracks">
     <tr><th scope="col">#</th><th scope="col">Title</th><th scope="col">Duration</th></tr>
     <?php foreach ($tracks as $id => $track) { ?>
