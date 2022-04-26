@@ -26,6 +26,22 @@
       return $artists;
     }
 
+    static function searchArtists(PDO $db, string $search, int $count) : array {
+      $stmt = $db->prepare('SELECT ArtistId, Name FROM Artist WHERE Name LIKE ? LIMIT ?');
+      $stmt->execute(array($search . '%', $count));
+  
+      $artists = array();
+      while ($artist = $stmt->fetch()) {
+        $artists[] = new Artist(
+          $artist['ArtistId'],
+          $artist['Name']
+        );
+      }
+  
+      return $artists;
+    }
+
+
     static function getArtist(PDO $db, int $id) : Artist {
       $stmt = $db->prepare('SELECT ArtistId, Name FROM Artist WHERE ArtistId = ?');
       $stmt->execute(array($id));

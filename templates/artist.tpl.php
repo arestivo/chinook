@@ -5,7 +5,10 @@
 ?>
 
 <?php function drawArtists(array $artists) { ?>
-  <h2>Artists</h2>
+  <header>
+    <h2>Artists</h2>
+    <input id="searchartist" type="text" placeholder="search">
+  </header>
   <section id="artists">
     <?php foreach($artists as $artist) { ?> 
       <article>

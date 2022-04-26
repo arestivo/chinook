@@ -54,6 +54,18 @@ main a {
   text-decoration: none;
 }
 
+main > header {
+  display: flex;
+}
+
+main > header h2 {
+  flex-grow: 1;
+}
+
+main > header input {
+  align-self: center;
+}
+
 #artists {
   display: flex;
   flex-wrap: wrap;
