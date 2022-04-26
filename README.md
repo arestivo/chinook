@@ -90,3 +90,14 @@ Each class has one or more functions to get data from the database.
 * Add responsive viewport to HTML head.
 * Set maximum width of body.
 * Add a media query for smaller screens.
+
+# Step 12: Ajax Search
+
+* Added am [api_artists.php](api_artists.php) page that returns a list of artists with a name starting with a specific string in JSON format.
+* Added a function to get artists starting with a specific string from the database.
+* Added a search input box to search artists.
+* Added some CSS to format the search input box.
+* Added a new JavaScript file and included it from the header template.
+* Added an event listener to the search input that fires every time the input changes and:
+  * Gets the 'api_artists.php' page using Ajax (with fetch), sending the text in the input.
+  * Uses the returned results to update the list of artists.
