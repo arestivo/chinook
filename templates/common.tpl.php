@@ -14,7 +14,7 @@
     <header>
       <h1><a href="/">Music Shop</a></h1>
       <?php 
-        if ($_SESSION['id']) drawLogoutForm($_SESSION['name']);
+        if (isset($_SESSION['id'])) drawLogoutForm($_SESSION['name']);
         else drawLoginForm();
       ?>
     </header>
