@@ -93,7 +93,7 @@ Each class has one or more functions to get data from the database.
 
 # Step 12: Ajax Search
 
-* Added am [api_artists.php](api_artists.php) page that returns a list of artists with a name starting with a specific string in JSON format.
+* Added an [api_artists.php](api_artists.php) page that returns a list of artists with a name starting with a specific string in JSON format.
 * Added a function to get artists starting with a specific string from the database.
 * Added a search input box to search artists.
 * Added some CSS to format the search input box.
