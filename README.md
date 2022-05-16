@@ -104,9 +104,9 @@ Each class has one or more functions to get data from the database.
 
 # Step 13: Messages
 
-* Added folders for [pages](https://github.com/arestivo/chinook/tree/master/pages), [actions](https://github.com/arestivo/chinook/tree/master/actions), and [api](https://github.com/arestivo/chinook/tree/master/api).
+* Added folders for [pages](pages), [actions](actions), and [api](api).
 * Fixed all imports.
-* Added a [Session](https://github.com/arestivo/chinook/blob/master/utils/session.php) class responsible for all things session.
+* Added a [Session](utils/session.php) class responsible for all things session.
 * Replaced all direct calls to session_start, session_destroy and $_SESSION to calls to this class.
 * Added a way to store messages in the session.
 * Show messages on all pages (HTML and CSS).
