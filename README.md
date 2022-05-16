@@ -104,10 +104,26 @@ Each class has one or more functions to get data from the database.
 
 # Step 13: Messages
 
-* Added folders for [pages](pages), [actions](actions), and [api](api).
-* Fixed all imports.
-* Added a [Session](utils/session.php) class responsible for all things session.
-* Replaced all direct calls to session_start, session_destroy and $_SESSION to calls to this class.
+First some organization:
+
+* Added folder for [pages](pages):
+  * [index.php](pages/index.php): main page; list and search artists.
+  * [artist.php](pages/artist.php): view an artist and its albums.
+  * [album.php](pages/album.php): view an album and its tracks.
+  * [edit_album.php](pages/edit_album.php): form to edit an album title.
+  * [profile.php](pages/profile.php): form to edit the current user's profile.
+* Added folder for [actions](actions):
+  * [action_edit_album.php](actions/action_edit_album.php): edit album title.
+  * [action_edit_profile.php](actions/action_edit_profile.php): edit current user's profile.
+  * [action_edit_login.php](actions/action_login.php): verify e-mail and password and login user.
+  * [action_edit_logout.php](actions/action_logout.php): logout current user.
+* Added folder for [api](api):
+  * [api_artists.php](api/api_artists.php): returns all artists starting with a string in JSON format.
+* Changed all imports to accommodate the new folders using \_\_DIR\_\_ when needed.
+
+Adding messages:
+
+* Added a [Session](utils/session.php) class responsible for all things session-related, and replaced all direct calls to session_start, session_destroy and $_SESSION to calls to this class.
 * Added a way to store messages in the session.
-* Show messages on all pages (HTML and CSS).
+* Show all session-stored messages on all pages (HTML and CSS).
 * Added some success and error messages.
