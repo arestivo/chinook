@@ -2,7 +2,7 @@
 
 <?php function drawProfileForm(Customer $customer) { ?>
 <h2>Profile</h2>
-<form action="action_edit_profile.php" method="post" class="profile">
+<form action="../actions/action_edit_profile.php" method="post" class="profile">
 
   <label for="first_name">First Name:</label>
   <input id="first_name" type="text" name="first_name" value="<?=$customer->firstName?>">

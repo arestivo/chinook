@@ -66,6 +66,10 @@ main > header input {
   align-self: center;
 }
 
+i.action {
+  font-size: 0.8em;
+}
+
 #artists {
   display: flex;
   flex-wrap: wrap;
@@ -150,6 +154,27 @@ footer {
   background-color: black;
   padding: 1em;
   color: white;
+}
+
+#messages article {
+  margin: 1em 0;
+  padding: 1em;
+}
+
+#messages article.success {
+  background-color: #DFF2BF;
+}
+
+#messages article.warning {
+  background-color: #FEEFB3;
+}
+
+#messages article.error {
+  background-color: #FFD2D2;
+}
+
+#messages article.info {
+  background-color: #BDE5F8;
 }
 
 @media only screen and (max-width: 540px) {

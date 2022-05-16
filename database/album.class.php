@@ -60,6 +60,15 @@
         $album['ArtistId']
       );
     }
+
+    function save($db) {
+      $stmt = $db->prepare('
+        UPDATE ALBUM SET Title = ?
+        WHERE AlbumId = ?
+      ');
+
+      $stmt->execute(array($this->title, $this->id));
+    }
   
   }
 ?>
