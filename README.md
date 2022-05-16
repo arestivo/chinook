@@ -101,3 +101,13 @@ Each class has one or more functions to get data from the database.
 * Added an event listener to the search input that fires every time the input changes and:
   * Gets the 'api_artists.php' page using Ajax (with fetch), sending the text in the input.
   * Uses the returned results to update the list of artists.
+
+# Step 13: Messages
+
+* Added folders for [pages](https://github.com/arestivo/chinook/tree/master/pages), [actions](https://github.com/arestivo/chinook/tree/master/actions), and [api](https://github.com/arestivo/chinook/tree/master/api).
+* Fixed all imports.
+* Added a [Session](https://github.com/arestivo/chinook/blob/master/utils/session.php) class responsible for all things session.
+* Replaced all direct calls to session_start, session_destroy and $_SESSION to calls to this class.
+* Added a way to store messages in the session.
+* Show messages on all pages (HTML and CSS).
+* Added some success and error messages.
