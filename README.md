@@ -16,17 +16,23 @@ sqlite3 database.db < database.sql
 
 # Step 2: Draw Mockups
 
+[What's New](https://github.com/arestivo/chinook/compare/step1...step2)
+
 Draw some initial mockups. Don't lose too much time with these:
 
 ![](docs/mockups.svg)
 
 # Step 3: HTML in PHP files
 
+[What's New](https://github.com/arestivo/chinook/compare/step2...step3)
+
 * [index.php](index.php)
 * [artist.php](artist.php)
 * [album.php](album.php)
 
 # Step 4: Create template files
+
+[What's New](https://github.com/arestivo/chinook/compare/step3...step4)
 
 Create a [templates](templates) folder that will contain several template files.
 
@@ -38,13 +44,19 @@ Each template file will have functions that will be able to draw parts of the HT
 
 # Step 5: Style folder
 
+[What's New](https://github.com/arestivo/chinook/compare/step4...step5)
+
 Create a [css](css) folder that will contain all files related to style of the web page.
 
 # Step 6: Documents folder
 
+[What's New](https://github.com/arestivo/chinook/compare/step5...step6)
+
 Create a [docs](docs) folder that will contain all files related to the documentation.
 
 # Step 7: Connect to the database
+
+[What's New](https://github.com/arestivo/chinook/compare/step6...step7)
 
 Create a [database](database) folder that will contain all database pertinent files:
 
@@ -56,6 +68,8 @@ Create a [database](database) folder that will contain all database pertinent fi
 
 # Step 8: Use classes
 
+[What's New](https://github.com/arestivo/chinook/compare/step7...step8)
+
 Transform all data access functions into classes:
 
 * [artist.class.php](database/artist.class.php) represents an artist.
@@ -65,6 +79,8 @@ Transform all data access functions into classes:
 Each class has one or more functions to get data from the database.
 
 # Step 9: Log In / Log out Actions
+
+[What's New](https://github.com/arestivo/chinook/compare/step8...step9)
 
 * Start a session on every page using *session_start()*.
 * Create a class to get customer data: [database/customer.class.php](database/customer.class.php).
@@ -77,6 +93,8 @@ Each class has one or more functions to get data from the database.
 
 # Step 10: Edit Profile
 
+[What's New](https://github.com/arestivo/chinook/compare/step9...step10)
+
 * Add a new [profile.php](profile.php) page that shows a form to edit the profile of the current user.
 * Make sure it does not show if no user is logged in.
 * Add a link from the logout form to the new page.
@@ -87,11 +105,15 @@ Each class has one or more functions to get data from the database.
 
 # Step 11: Responsive
 
+[What's New](https://github.com/arestivo/chinook/compare/step10...step11)
+
 * Add responsive viewport to HTML head.
 * Set maximum width of body.
 * Add a media query for smaller screens.
 
 # Step 12: Ajax Search
+
+[What's New](https://github.com/arestivo/chinook/compare/step11...step12)
 
 * Added an [api_artists.php](api_artists.php) page that returns a list of artists with a name starting with a specific string in JSON format.
 * Added a function to get artists starting with a specific string from the database.
@@ -103,6 +125,8 @@ Each class has one or more functions to get data from the database.
   * Uses the returned results to update the list of artists.
 
 # Step 13: Messages
+
+[What's New](https://github.com/arestivo/chinook/compare/step12...step13)
 
 First some organization:
 
