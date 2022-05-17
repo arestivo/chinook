@@ -1,10 +1,12 @@
 <?php
   class Session {
+    private array $messages;
+
     public function __construct() {
       session_start();
 
-      if (!isset($_SESSION['messages']))
-        $_SESSION['messages'] = array();
+      $this->messages = isset($_SESSION['messages']) ? $_SESSION['messages'] : array();
+      unset($_SESSION['messages']);
     }
 
     public function isLoggedIn() : bool {
@@ -36,11 +38,7 @@
     }
 
     public function getMessages() {
-      return $_SESSION['messages'];
-    }
-
-    public function clearMessages() {
-      $_SESSION['messages'] = array();
+      return $this->messages;
     }
   }
 ?>

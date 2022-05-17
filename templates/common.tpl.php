@@ -30,7 +30,7 @@
         <article class="<?=$messsage['type']?>">
           <?=$messsage['text']?>
         </article>
-      <?php } $session->clearMessages(); ?>
+      <?php } ?>
     </section>
 
     <main>
