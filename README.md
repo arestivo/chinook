@@ -16,15 +16,11 @@ sqlite3 database.db < database.sql
 
 # Step 2: Draw Mockups
 
-[What's New](https://github.com/arestivo/chinook/compare/step1...step2)
-
 Draw some initial mockups. Don't lose too much time with these:
 
 ![](docs/mockups.svg)
 
 # Step 3: HTML in PHP files
-
-[What's New](https://github.com/arestivo/chinook/compare/step2...step3)
 
 * [index.php](index.php)
 * [artist.php](artist.php)
@@ -44,19 +40,15 @@ Each template file will have functions that will be able to draw parts of the HT
 
 # Step 5: Style folder
 
-[What's New](https://github.com/arestivo/chinook/compare/step4...step5)
-
 Create a [css](css) folder that will contain all files related to style of the web page.
 
 # Step 6: Documents folder
-
-[What's New](https://github.com/arestivo/chinook/compare/step5...step6)
 
 Create a [docs](docs) folder that will contain all files related to the documentation.
 
 # Step 7: Connect to the database
 
-[What's New](https://github.com/arestivo/chinook/compare/step6...step7)
+[What's New](https://github.com/arestivo/chinook/compare/step4...step7)
 
 Create a [database](database) folder that will contain all database pertinent files:
 
