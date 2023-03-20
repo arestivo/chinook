@@ -7,9 +7,7 @@
   if (!$session->isLoggedIn()) die(header('Location: /'));
 
   require_once(__DIR__ . '/../database/connection.db.php');
-  require_once(__DIR__ . '/../database/artist.class.php');
   require_once(__DIR__ . '/../database/album.class.php');
-  require_once(__DIR__ . '/../database/track.class.php');
 
   require_once(__DIR__ . '/../templates/common.tpl.php');
   require_once(__DIR__ . '/../templates/album.tpl.php');
