@@ -61,7 +61,7 @@
       );
     }
 
-    function save($db) {
+    function save(PDO $db) {
       $stmt = $db->prepare('
         UPDATE ALBUM SET Title = ?
         WHERE AlbumId = ?
